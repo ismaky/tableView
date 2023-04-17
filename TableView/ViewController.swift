@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     var tableViewPlaces = UITableView()
     
     var arrayPlaces = [Place(name: "Austrália", photo: #imageLiteral(resourceName: "australia")),
@@ -54,7 +54,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+	
+	override var shouldAutorotate: Bool {
+		return false
+	}
 
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		return .portrait
+	}
 
 }
 
