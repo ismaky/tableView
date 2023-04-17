@@ -16,6 +16,10 @@
 		32B2103729ED9A3400138713 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2103629ED9A3400138713 /* TableViewTests.swift */; };
 		32B2104129ED9A3400138713 /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2104029ED9A3400138713 /* TableViewUITests.swift */; };
 		32B2104329ED9A3400138713 /* TableViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2104229ED9A3400138713 /* TableViewUITestsLaunchTests.swift */; };
+		32B2105029ED9E9E00138713 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2104F29ED9E9E00138713 /* Place.swift */; };
+		32B2105229EDA16F00138713 /* CellPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2105129EDA16F00138713 /* CellPlace.swift */; };
+		32B2105329EDA56B00138713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2102329ED9A3200138713 /* ViewController.swift */; };
+		32B2105429EDA56C00138713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B2102329ED9A3200138713 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,8 @@
 		32B2103C29ED9A3400138713 /* TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B2104029ED9A3400138713 /* TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITests.swift; sourceTree = "<group>"; };
 		32B2104229ED9A3400138713 /* TableViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32B2104F29ED9E9E00138713 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		32B2105129EDA16F00138713 /* CellPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				32B2101D29ED9A3200138713 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		32B2101D29ED9A3200138713 /* Products */ = {
 			isa = PBXGroup;
@@ -106,6 +113,8 @@
 				32B2102829ED9A3400138713 /* Assets.xcassets */,
 				32B2102A29ED9A3400138713 /* LaunchScreen.storyboard */,
 				32B2102D29ED9A3400138713 /* Info.plist */,
+				32B2104F29ED9E9E00138713 /* Place.swift */,
+				32B2105129EDA16F00138713 /* CellPlace.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -261,6 +270,8 @@
 				32B2102429ED9A3200138713 /* ViewController.swift in Sources */,
 				32B2102029ED9A3200138713 /* AppDelegate.swift in Sources */,
 				32B2102229ED9A3200138713 /* SceneDelegate.swift in Sources */,
+				32B2105029ED9E9E00138713 /* Place.swift in Sources */,
+				32B2105229EDA16F00138713 /* CellPlace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B2105329EDA56B00138713 /* ViewController.swift in Sources */,
 				32B2103729ED9A3400138713 /* TableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32B2105429EDA56C00138713 /* ViewController.swift in Sources */,
 				32B2104329ED9A3400138713 /* TableViewUITestsLaunchTests.swift in Sources */,
 				32B2104129ED9A3400138713 /* TableViewUITests.swift in Sources */,
 			);
@@ -536,6 +549,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = button.TableViewUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = button.TableViewTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = button.TableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -554,6 +569,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = button.TableViewUITests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = button.TableViewTests;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = button.TableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
